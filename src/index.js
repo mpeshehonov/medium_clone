@@ -1,7 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Routes from './pages/routes';
+import {BrowserRouter as Router} from 'react-router-dom';
+import TopBar from './components/TopBar';
+import './index.css'
+
+
+const App = () => {
+  return (
+    <div>
+      <Router>
+        <TopBar/>
+        <Routes/>
+      </Router>
+    </div>
+  );
+}
 
 ReactDOM.render(
   <React.StrictMode>
